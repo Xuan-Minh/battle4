@@ -1,5 +1,6 @@
 {
   "version": 3,
   "sources": [],
-  "sections": []
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Applications/MAMP/htdocs/battle4/styles/globals.css"],"sourcesContent":["/*! tailwindcss v4.1.16 | MIT License | https://tailwindcss.com */\n.block {\n  display: block;\n}\nhtml,\nbody,\n#__next {\n  height: 100%;\n}\nbody {\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\n    \"Helvetica Neue\", Arial;\n  margin: 0;\n}\nmain {\n  max-width: 960px;\n  margin: 20px auto;\n}\n"],"names":[],"mappings":"AACA;;;;AAGA;;;;AAKA;;;;;AAKA","debugId":null}}]
 }

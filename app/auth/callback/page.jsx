@@ -1,30 +1,43 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Callback() {
   const router = useRouter();
+  const [isAuthenticating, setIsAuthenticating] = useState(true);
 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const code = urlParams.get("code");
-    const service = urlParams.get("service"); // Twitch or Streamlabs
+    if (typeof window !== "undefined") {
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get("code");
+      const service = urlParams.get("service"); // Twitch ou Streamlabs
 
-    if (code && service) {
-      // Send the code to the server to exchange for a token
-      fetch(`/api/${service}/token`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ code }),
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(`${service} Access Token:`, data.access_token);
-          router.push("/dashboard"); // Redirect after authentication
-        });
+      if (code && service) {
+        // Envoyer le code au serveur pour échanger un token
+        fetch(`/api/${service}/token`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ code }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(`${service} Access Token:`, data.access_token);
+            router.push("/dashboard"); // Redirection après authentification
+          })
+          .catch((err) => {
+            console.error("Erreur lors de l'authentification :", err);
+            setIsAuthenticating(false);
+          });
+      } else {
+        setIsAuthenticating(false);
+      }
     }
   }, [router]);
 
-  return <div>Authenticating...</div>;
+  if (!isAuthenticating) {
+    return <div>Erreur lors de l'authentification. Veuillez réessayer.</div>;
+  }
+
+  return <div>Authentification en cours...</div>;
 }

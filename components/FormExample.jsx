@@ -1,6 +1,4 @@
-import { useForm } from "react-hook-form";
-
-export default function FormExample() {
+export default function FormExampleComponent() {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
