@@ -1,0 +1,21 @@
+{
+  "name": "battle4",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@portabletext/react": "^4.0.3",
+    "@sanity/client": "^7.12.0",
+    "framer-motion": "^12.23.24",
+    "next": "^16.0.0",
+    "next-intl": "^4.4.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-hook-form": "^7.65.0"
+  }
+}
