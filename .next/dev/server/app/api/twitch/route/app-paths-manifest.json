@@ -1,0 +1,3 @@
+{
+  "/api/twitch/route": "app/api/twitch/route.js"
+}
