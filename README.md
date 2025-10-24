@@ -56,6 +56,6 @@ Prochaines étapes recommandées
 - Mettre en place CI (GitHub Actions) ou utiliser les déploiements Netlify automatiques.
 
 Si vous voulez, je peux :
+
 - exécuter l'installation (npm install) et démarrer le serveur pour vérifier que tout compile, ou
 - adapter précisément les API (ex : récupérer viewers Twitch pour une liste de streamers) — dites-moi quel flux vous voulez exposer.
-
