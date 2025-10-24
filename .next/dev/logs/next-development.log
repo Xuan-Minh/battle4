@@ -1,5 +1,15 @@
-[00:00:00.402] Server  LOG      ✓ Ready in 255ms
-[00:00:00.402] Server  WARN     ⚠ Cross origin request detected from noncommunistically-unsedentary-jennell.ngrok-free.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:00.419] Server  LOG      ✓ Ready in 263ms
+[00:00:01.404] Server  WARN     ⚠ Cross origin request detected from noncommunistically-unsedentary-jennell.ngrok-free.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:01.874] Server  ERROR    ⨯ Error: Attempted to call createMotionComponent() from the server but createMotionComponent is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
-[00:00:01.987] Browser ERROR   uncaughtError: Error: Attempted to call createMotionComponent() from the server but createMotionComponent is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
+[00:00:01.696] Server  ERROR    ⨯ ReferenceError: useForm is not defined
+[00:00:01.926] Browser ERROR   uncaughtError: ReferenceError: useForm is not defined
+[00:00:04.301] Server  ERROR    ⨯ ReferenceError: useForm is not defined
+[00:00:04.472] Browser ERROR   uncaughtError: ReferenceError: useForm is not defined
+[00:00:04.998] Server  ERROR    ⨯ ReferenceError: useForm is not defined
+[00:00:05.162] Browser ERROR   uncaughtError: ReferenceError: useForm is not defined
+[00:00:05.556] Server  ERROR    ⨯ ReferenceError: useForm is not defined
+[00:00:05.715] Browser ERROR   uncaughtError: ReferenceError: useForm is not defined
+[00:00:05.732] Server  ERROR    ⨯ ReferenceError: useForm is not defined
+[00:00:05.900] Browser ERROR   uncaughtError: ReferenceError: useForm is not defined
+[00:00:16.282] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:16.349] Server  LOG      ✓ Compiled in 63ms

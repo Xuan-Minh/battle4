@@ -1,5 +1,6 @@
+"use client";
 import Header from "../components/Header";
-import FormExample from "../components/FormExample";
+import FormExampleComponent from "../components/FormExampleComponent";
 import { motion } from "framer-motion";
 
 export default function Page() {
@@ -17,7 +18,7 @@ export default function Page() {
         </p>
 
         <section style={{ marginTop: 20 }}>
-          <FormExample />
+          <FormExampleComponent />
         </section>
       </main>
     </>
